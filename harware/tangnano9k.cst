@@ -1,0 +1,16 @@
+// Ràng buộc vị trí chân (Pin Placement)
+IO_LOC "ext_clk" 52;       // Thạch anh 27MHz được nối cứng vào chân số 52
+IO_LOC "btn_rst" 3;        // Nút nhấn S1 làm chân Reset nằm ở chân số 3
+IO_LOC "btn_data" 4;       // Nút nhấn S2 làm chân Data đầu vào nằm ở chân số 4
+
+IO_LOC "led_fsk" 10;       // Đèn LED số 1 nằm ở chân số 10
+IO_LOC "led_lock" 11;      // Đèn LED số 2 nằm ở chân số 11
+IO_LOC "out_fsk" 38;       // Xuất tín hiệu ra chân cắm Header IO số 38
+
+// Ràng buộc tiêu chuẩn điện áp (IO Voltage Standard - 3.3V)
+IO_PORT "ext_clk" IO_TYPE=LVCMOS33;
+IO_PORT "btn_rst" IO_TYPE=LVCMOS33;
+IO_PORT "btn_data" IO_TYPE=LVCMOS33;
+IO_PORT "led_fsk" IO_TYPE=LVCMOS18;
+IO_PORT "led_lock" IO_TYPE=LVCMOS18;
+IO_PORT "out_fsk" IO_TYPE=LVCMOS33;
